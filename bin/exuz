@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'extremeunzip.zzaqsu'
+
+if ARGV.empty? # 未指定命令行参数。
+else # 指定了命令行参数。
+    returnCode = 0 # 失败
+    $rootPath = ARGV[0] # 记录要打包的目录树的根目录。
+
+    exuzObject = ExtremeUnZip.new # 解压对象
+
+    result = exuzObject.exuz($rootPath) # 解压
+    
+    if result # 解压成功
+    else # 解压失败
+        returnCode = 1 # 失败
+    end #if result # 解压成功
+    
+    exit returnCode # 退出
+end

@@ -1,0 +1,32 @@
+Style/CommentedKeyword:
+  Enabled: false
+
+Style/AsciiComments:
+    Enabled: false
+    
+Naming/VariableName:
+    Enabled: false
+    
+Layout/IndentationWidth:
+    Enabled: false
+    
+Naming/BlockParameterName:
+    Enabled: false
+    
+Style/ParenthesesAroundCondition:
+    Enabled: false
+    
+Style/StringConcatenation:
+    Enabled: false
+    
+Style/NumericLiterals:
+    Enabled: false
+    
+Naming/MethodParameterName:
+    Enabled: false
+
+Naming/MethodName:
+    Enabled: false
+    
+Style/Documentation:
+    Enabled: false

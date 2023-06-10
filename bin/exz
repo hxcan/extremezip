@@ -1,0 +1,16 @@
+#!/usr/bin/ruby
+
+require 'extremezip.zzaqsv'
+require 'notifier'
+
+if ARGV.empty? # 未指定命令行参数。
+  puts("exz filename")
+else # 指定了命令行参数。
+  $rootPath = ARGV[0] # 记录要打包的目录树的根目录。
+
+  exzObject = ExtremeZip.new # 创建压缩对象
+
+  exzObject.exz($rootPath) # 压缩
+    
+  Notifier.notify( image: "image.png", title: "exz finished", message: $rootPath )
+end
