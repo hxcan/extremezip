@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'EXtremeZip'
-  s.version = '2025.1.28'
-  s.date = '2025-01-28'
+  s.version = '2026.2.21'
+  s.date = '2026-02-21'
   s.summary = 'EXtremeZip'
   s.description = 'Extreme zip.'
   s.authors = ['Hxcan Cai']
